@@ -1,0 +1,13 @@
+/target/
+/.settings/
+/.project
+/.classpath
+/.metadata
+/bin/
+.gradle
+/.idea/
+*.xml
+*.pyc
+*.idea
+.pyc
+build
