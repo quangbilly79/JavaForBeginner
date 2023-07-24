@@ -10,11 +10,15 @@ public class Method {
         }
     }
     // Overload method: trong cùng 1 Class, cùng tên nhưng khác tham số
-    static void printMutiplicationTable(String i) {
+    void printMutiplicationTable(String i) {
         System.out.println(i);
     }
     public static void main(String[] args) {
         Void a = null;
-        printMutiplicationTable(3);
+        Method methodInstance = new Method();
+        // Access non static method thông qua instance
+        methodInstance.printMutiplicationTable("a");
+        // Access static method trực tiếp (có thể bỏ Method.)
+        Method.printMutiplicationTable(3);
     }
 }
