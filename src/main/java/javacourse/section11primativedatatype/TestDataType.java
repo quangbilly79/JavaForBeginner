@@ -1,4 +1,4 @@
-package javacourse.section11PrimativeDataType;
+package javacourse.section11primativedatatype;
 
 import java.math.BigDecimal;
 
@@ -39,6 +39,21 @@ public class TestDataType {
         BigDecimal num1 = new BigDecimal("0.1"); // truyền vào String cho chuẩn
         BigDecimal num2 = new BigDecimal("0.2");
         System.out.println(num1.add(num2)); // 0.3 (dùng Big Decimal ra đúng kq)
-        System.out.println(0.1+0.2); // 0.30000000000000004 (sai số khi tính toán bthg)
+        System.out.println(0.1+0.2); // 0.30000000000000004
+
+        // char lưu mất 2 bytes
+        char charVar = 'a'; // Dùng ngoặc ''
+        char charVar1 = '\u0022'; // Có thể dùng "\"u để gõ kí tự unicode k có trên bàn phím (")
+        char charVar2 = 65; // Có thể dùng mã unicode (A)
+        charVar2++; // B
+        charVar2 += 1; // C
+        int intCharVar2 = (int)charVar2; // 67
+        char charVar3 = '\n'; // Các kí tự xuống dòng, tab, khi in ra sẽ có hiệu ứng tg ứng
+        System.out.println(charVar + " " + charVar1 + " " + charVar2 + " " + intCharVar2);
+        Character charVar4 = 'x'; // Tạo vs wrap class Character
+        for (char charVar5 = 'a'; charVar5 <= 'z'; charVar5++) {
+            System.out.println(charVar5);
+        }
+
     }
 }

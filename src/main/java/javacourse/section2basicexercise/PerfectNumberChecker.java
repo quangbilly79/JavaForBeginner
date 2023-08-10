@@ -1,4 +1,4 @@
-package javacourse.section2BasicExercise;
+package javacourse.section2basicexercise;
 
 //In this exercise, your task is to implement a method in the PerfectNumberChecker class
 // that checks whether a number is a "perfect number".

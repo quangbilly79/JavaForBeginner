@@ -1,4 +1,4 @@
-package javacourse.section2BasicExercise;
+package javacourse.section2basicexercise;
 //A year is a leap year in the Gregorian calendar if:
 //
 //        It is divisible by 4 (AND)

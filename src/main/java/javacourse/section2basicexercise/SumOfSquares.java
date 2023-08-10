@@ -1,4 +1,4 @@
-package javacourse.section2BasicExercise;
+package javacourse.section2basicexercise;
 
 // tính tổng bình phuơng các số từ 1 đến n. Vd n = 3 => 1^2+2^2+3^2
 public class SumOfSquares {

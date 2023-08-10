@@ -1,4 +1,4 @@
-package javacourse.section11PrimativeDataType;
+package javacourse.section11primativedatatype;
 
 public class BiNumberExercise {
     public static class BiNumber {
