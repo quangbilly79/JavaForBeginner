@@ -49,6 +49,7 @@ public class SomeForloopFunction {
         System.out.println();
     }
 
+    // In các số mà sau khi mũ 3 lên vẫn nhỏ hơn n
     public static void printCube(int n) {
         int i = 1;
         while (i <= Math.pow(n,(float)1/3)) {
