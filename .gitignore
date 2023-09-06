@@ -11,3 +11,4 @@
 *.idea
 .pyc
 build
+*.iml
