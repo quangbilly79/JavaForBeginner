@@ -16,7 +16,8 @@ public class ArrayTest {
         System.out.println(marks.getClass()); // class [I
 
         // Hoặc có thể khởi tạo = cách tạo 1 Object với dataType[] variableName = new dataType[numOfElem]
-        int[] arrayInt = new int[5];
+        int[] arrayInt0 = new int[]{1,2,3,4,5}; // k khai báo số ptử
+        int[] arrayInt = new int[5]; // khai báo số ptử thì cần assign thủ công từng ptử
         for (int i = 0; i < arrayInt.length; i++) {
             System.out.println(arrayInt[i]); // 0,0,0,0,0
         }
