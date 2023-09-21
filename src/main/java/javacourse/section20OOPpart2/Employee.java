@@ -5,7 +5,7 @@ public class Employee extends Person {
     String employer;
     int employeeGrade;
     int salary;
-
+    // Constructor cần gọi đến constructor class cha với super(a,b,c)
     public Employee(String name, String email, String phoneNumber, String title,
                     String employer, int employeeGrade, int salary) {
         super(name, email, phoneNumber);

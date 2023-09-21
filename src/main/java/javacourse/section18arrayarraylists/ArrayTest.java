@@ -3,6 +3,7 @@ package javacourse.section18arrayarraylists;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class ArrayTest {
 
@@ -37,6 +38,7 @@ public class ArrayTest {
         for (String elem:arrayString) {
             System.out.println(elem);
         }
+
 
         // Có thể gán 1 Class Instance làm pt của array
         class Person {
@@ -76,6 +78,13 @@ public class ArrayTest {
         int[] arrayIntBlank = {2,0,0,0,3};
         Arrays.fill(arrayIntBlank, 5);
         System.out.println(Arrays.toString(arrayIntBlank)); // [5, 5, 5, 5, 5]
+
+        // Multi type array with Object
+        Object[] arrayMultiType = {"a", 1, true, "d"};
+        for(Object elem:arrayMultiType) {
+            System.out.println(elem);
+            System.out.println(elem.getClass());
+        }
 
     }
 }

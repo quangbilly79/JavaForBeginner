@@ -2,6 +2,7 @@ package javacourse.section18arrayarraylists;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class ArrayListTest {
     public static void main(String[] args) {
@@ -43,6 +44,11 @@ public class ArrayListTest {
         ArrayList arrayListNul;
         //System.out.println(arrayListNul);
 
+        // Sử dụng iterator thay for loop (array k đc)
+        Iterator arrayList3Iterator = arrayList3.iterator();
+        while (arrayList3Iterator.hasNext()) {
+            System.out.println(arrayList3Iterator.next());
+        }
 
     }
 }
