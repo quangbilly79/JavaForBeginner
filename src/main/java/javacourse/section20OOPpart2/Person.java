@@ -10,6 +10,7 @@ public class Person {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
     public String getName() {
         return name;
     }

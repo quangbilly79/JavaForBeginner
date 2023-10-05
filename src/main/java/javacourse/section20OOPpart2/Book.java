@@ -15,7 +15,7 @@ public class Book {
         this.author = author;
     }
 
-    public void addReview(Review review) {
+    void addReview(Review review) {
         reviewList.add(review);
     }
 
