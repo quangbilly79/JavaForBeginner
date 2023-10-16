@@ -32,7 +32,7 @@ public class GenericsTest {
     }
 
     public static void main(String[] args) {
-        genericClassSimple<String> stringgenericClassSimple = new genericClassSimple<>();
+        GenericClassSimple<String> stringgenericClassSimple = new GenericClassSimple<>();
         stringgenericClassSimple.addElement("abc");
         stringgenericClassSimple.addElement("xyz");
         stringgenericClassSimple.removeElement("abc");
@@ -40,7 +40,7 @@ public class GenericsTest {
         System.out.println(stringgenericClassSimple.getElement(0)); // xyz
 
 
-        genericClassSimple<Integer> integergenericClassSimple = new genericClassSimple<>();
+        GenericClassSimple<Integer> integergenericClassSimple = new GenericClassSimple<>();
         integergenericClassSimple.addElement(2);
         integergenericClassSimple.addElement(3);
         integergenericClassSimple.removeElement(3);
@@ -48,7 +48,7 @@ public class GenericsTest {
         System.out.println(integergenericClassSimple.getElement(0)); // x
         duplicate(integergenericClassSimple.arrayListT);
 
-        genericClassExtends<Integer> test1 = new genericClassExtends<>();
+        GenericClassExtends<Integer> test1 = new GenericClassExtends<>();
         // Được nếu extends Integer, extends Number k đc
         // test1.arrayListT.get(0).compareTo();
 
