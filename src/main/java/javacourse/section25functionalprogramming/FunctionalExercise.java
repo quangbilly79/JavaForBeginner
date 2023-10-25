@@ -63,8 +63,5 @@ public class FunctionalExercise {
         System.out.println("-----------");
         integerList.stream().sorted(methodReferrenceTest::comapreTo).forEach(System.out::println);
 
-
-
-
     }
 }
