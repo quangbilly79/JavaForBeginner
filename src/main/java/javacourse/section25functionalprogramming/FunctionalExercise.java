@@ -2,6 +2,7 @@ package javacourse.section25functionalprogramming;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -42,6 +43,7 @@ class methodReferrenceTest {
 
 public class FunctionalExercise {
     public static void main(String[] args) {
+        Comparator<String> testComparator = (String x, String y) -> Integer.compare(x.length(), y.length());
         List<Integer> integerList = new ArrayList<>();
         Collections.addAll(integerList,1,3,4,2,5,5,4);
         integerList.stream().forEach(new forEachInteger());
@@ -63,5 +65,6 @@ public class FunctionalExercise {
         System.out.println("-----------");
         integerList.stream().sorted(methodReferrenceTest::comapreTo).forEach(System.out::println);
 
+        // stringList.stream().sorted(testComparator).forEach(System.out::println);
     }
 }

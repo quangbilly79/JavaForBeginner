@@ -1,5 +1,7 @@
 package javacourse.section3OOP;
 
+import java.util.Objects;
+
 public class Motorbike {
     // Cac field
     public String name;
@@ -45,6 +47,19 @@ public class Motorbike {
     // Tang Speed. Sử dụng method setSpeed để check đk luôn
     public void increaseSpeed(int speed) {
         setSpeed(this.speed + speed);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Motorbike motorbike = (Motorbike) o;
+        return speed == motorbike.speed;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(speed);
     }
 }
 
